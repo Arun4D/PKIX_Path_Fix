@@ -12,7 +12,7 @@ Copy cacerts from \jre\lib\security\cacerts to c:\dev\keystore\cacerts
 
 ```
 keytool -genkey -alias jiratruststore -keyalg RSA -keystore "C:\dev\keystore\cacerts"
-keytool -import -alias jira -file "C:\Downloads\jira.cer" -keystore "C:\dev\keystore\cacertss" -storepass changeit
+keytool -import -alias jira -file "C:\Downloads\jira.cer" -keystore "C:\dev\keystore\cacerts" -storepass changeit
 keytool -list -keystore "C:\dev\keystore\cacerts"
 ```
 ## Passing truststore on maven / gradle / shell run
